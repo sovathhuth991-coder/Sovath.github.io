@@ -25,7 +25,7 @@
     padding: 0;
     box-shadow: none;
     overflow: hidden;
-    transition: var(--transition);
+    transition: order 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease;
 }
 
 /* ---- THE GLOWING BORDER (MOVING) ---- */
@@ -1518,7 +1518,7 @@ body {
 .dash-card {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease, order 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dash-card.card-visible {
